@@ -1,132 +1,79 @@
-{
- "cells": [
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "#Add a new collumn to see the amount in Gini Coefficent from 2004-2013\n",
-    "gini1[\"Change\"] = ((gini1[\"2013\"] - gini1[\"2004\"]))"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "#Change index to country name in order to easily graph\n",
-    "gini2.set_index('Country Name', inplace=True)"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "gini2 = gini2.sort_values(by='2004', ascending=False)\n",
-    "pd.Series(gini2['2004']).plot(kind='barh',\n",
-    "                                                    title= \"GINI Index :2004\")"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "#Bar graph comparing the change in GINI Coefficent across the 11 countries\n",
-    "gini2 = gini2.sort_values(by='Change', ascending=False)\n",
-    "pd.Series(gini2['Change']).plot(kind='barh',\n",
-    "                                                    title= \"GINI Index Change:2004-2013\")"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "#Remove change column to prepare for a time series graph\n",
-    "del gini2[\"Change\"]"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "#Transpose df to move years to x axis\n",
-    "gini2 = gini2.T"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "#create new collunn for years\n",
-    "gini2[\"Year\"] = [2004,2007,2010,2013]"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "#set year column as index\n",
-    "gini2.set_index('Year', inplace=True)"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "gini2"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "#Create a time series graph showing the chabge in GINI index for all the countries across the time frame\n",
-    "\n",
-    "ax = gini2.plot(figsize=(20,10), linewidth=5, fontsize=20)\n",
-    "plt.xlabel('Year', fontsize=20)\n",
-    "plt.ylabel(\"GINI Index(x100)\", fontsize=20)\n",
-    "ax.legend(loc='upper center', bbox_to_anchor=(0.5, 1.05),\n",
-    "          ncol=3, fancybox=True, shadow=True)"
-   ]
-  }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "Python 3",
-   "language": "python",
-   "name": "python3"
-  },
-  "language_info": {
-   "codemirror_mode": {
-    "name": "ipython",
-    "version": 3
-   },
-   "file_extension": ".py",
-   "mimetype": "text/x-python",
-   "name": "python",
-   "nbconvert_exporter": "python",
-   "pygments_lexer": "ipython3",
-   "version": "3.6.5"
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 2
-}
+
+# coding: utf-8
+
+# In[ ]:
+
+
+#Add a new collumn to see the amount in Gini Coefficent from 2004-2013
+gini1["Change"] = ((gini1["2013"] - gini1["2004"]))
+
+
+# In[ ]:
+
+
+#Change index to country name in order to easily graph
+gini2.set_index('Country Name', inplace=True)
+
+
+# In[ ]:
+
+
+gini2 = gini2.sort_values(by='2004', ascending=False)
+pd.Series(gini2['2004']).plot(kind='barh',
+                                                    title= "GINI Index :2004")
+
+
+# In[ ]:
+
+
+#Bar graph comparing the change in GINI Coefficent across the 11 countries
+gini2 = gini2.sort_values(by='Change', ascending=False)
+pd.Series(gini2['Change']).plot(kind='barh',
+                                                    title= "GINI Index Change:2004-2013")
+
+
+# In[ ]:
+
+
+#Remove change column to prepare for a time series graph
+del gini2["Change"]
+
+
+# In[ ]:
+
+
+#Transpose df to move years to x axis
+gini2 = gini2.T
+
+
+# In[ ]:
+
+
+#create new collunn for years
+gini2["Year"] = [2004,2007,2010,2013]
+
+
+# In[ ]:
+
+
+#set year column as index
+gini2.set_index('Year', inplace=True)
+
+
+# In[ ]:
+
+
+gini2
+
+
+# In[ ]:
+
+
+#Create a time series graph showing the chabge in GINI index for all the countries across the time frame
+
+ax = gini2.plot(figsize=(20,10), linewidth=5, fontsize=20)
+plt.xlabel('Year', fontsize=20)
+plt.ylabel("GINI Index(x100)", fontsize=20)
+ax.legend(loc='upper center', bbox_to_anchor=(0.5, 1.05),
+          ncol=3, fancybox=True, shadow=True)
+
