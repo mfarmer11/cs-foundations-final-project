@@ -44,7 +44,7 @@ For part three analysis, the emphasis is only on the United States to see how it
 
 The results of part one analysis show that the United States stayed roughly the same in terms of income inequality, only slightly increasing between 2004 to 2013. However, as seen i n Figure.1 and Figure.2, the general trend for the other ten countries was to move towards the United States position, with low Gini countries like Denmark and Greece showing the greatest amount of increase in inequality, and high Gini countries like Honduras and Argentina showing the most decline in income inequality. The United Kingdom showed a significant reduction in income inequality as it has the most similar form economic market to the United States, yet both countries have vastly different results. Figure.3 shows all countries slightly increases in their Gini coefficient during the time of Great Recession. 
  
-![alt text]cs-foundations-final-project/images/g1.PNG
+![alt text]https://github.com/mfarmer11/cs-foundations-final-project/blob/456a56ae40a34024dd34d6b00460fc9485769fff/images/g1.PNG
 
 Figure 1
 
