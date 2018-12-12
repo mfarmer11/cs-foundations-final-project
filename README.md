@@ -40,7 +40,7 @@ For part two analysis, ten metrics were selected from over the fifteen-thousand 
 
 For part three analysis, the emphasis is only on the United States to see how it its own socio-economic indicator correlate with income inequality using the Gini index. More metrics were added, and some were dropped due to lack of data for some indicators as the time window expanded to 1991 to 2013. The full list of indictors used for correlation analysis are: Employment in industry sector, Age dependency, Unemployment rate, Youth unemployment rate, Tax revenue as GDP, Taxes on income and capital gains, Household Consumption, GDP growth, GDP per capita growth, Population in poverty at $5.5/day, Internet users, GNI per capita growth, GNI per capita, and HDI. Each of these variables were then correlated with the respective Gini index values from 1991 to 2013 to determine what kind of association they have with income inequality. The correlation coefficient of each metric were sorted and placed in a bar chart to show which indicators are negatively and positively correlated with increasing income inequality. 
 
-###KEY FINDINGS
+### KEY FINDINGS
 
 The results of part one analysis show that the United States stayed roughly the same in terms of income inequality, only slightly increasing between 2004 to 2013. However, as seen i n Figure.1 and Figure.2, the general trend for the other ten countries was to move towards the United States position, with low Gini countries like Denmark and Greece showing the greatest amount of increase in inequality, and high Gini countries like Honduras and Argentina showing the most decline in income inequality. The United Kingdom showed a significant reduction in income inequality as it has the most similar form economic market to the United States, yet both countries have vastly different results. Figure.3 shows all countries slightly increases in their Gini coefficient during the time of Great Recession. 
  
@@ -48,46 +48,54 @@ The results of part one analysis show that the United States stayed roughly the 
 
 Figure 1
 
+![alt text](
           
 Figure 2
  
+![alt text](https://github.com/mfarmer11/cs-foundations-final-project/blob/456a56ae40a34024dd34d6b00460fc9485769fff/images/po1.PNG)
+
 Figure.3
 
 Results for the second part analysis show that the socio-economic standards of countries do not always align with their Gini coefficients. For example, Figure.4 illustrates the GNI/capita of each country. The Czech Republic, United Kingdom, Pakistan, and Ukraine score much lower than the United States on the Gini index, 26.5, 33.2, 30.7, 24.6, and 41.0 respectfully. Yet, the United States has a significantly much higher GNI/capita. This demonstrates that although the distribution of income is more unequal in the United States, on average its population makes more income than most other countries. Moreover, Figure. 5 shows the comparison of the unemployment rates of these countries. The United States placed in the middle at 7.38% unemployment in 2013. What was more surprising was the difference between Greece and Thailand, even though they were only a few tenths of percent apart in Gini index in 2013. Greece had an overwhelming high unemployment rate 27.47% unemployment, while Thailand had almost zero unemployment, at 0.49%. 
  
+![alt text](https://github.com/mfarmer11/cs-foundations-final-project/blob/456a56ae40a34024dd34d6b00460fc9485769fff/images/gni.PNG)
+
 Figure. 4
  
+![alt text](https://github.com/mfarmer11/cs-foundations-final-project/blob/456a56ae40a34024dd34d6b00460fc9485769fff/images/unemployment.PNG)
+
 Figure.5
 
 When comparing the HDI across countries, Figure 6 shows the United States topped at number two between Denmark and the United Kingdom. Again, demonstrating that the United States has a relatively high standard of living, when compared with countries that have much lower income inequality. It also important to point out that countries with higher Gini coefficients such as Argentina have a higher HDI than more income equal countries such as Pakistan and Ukraine. Hence, the presence of high income inequality does not necessarily transcend to a lower standard of living. 
  
+![alt text](https://github.com/mfarmer11/cs-foundations-final-project/blob/456a56ae40a34024dd34d6b00460fc9485769fff/images/HDI_one.PNG)
+
 Figure 6
+
 Furthermore, comparing the change in HDI with the change in Gini from 2004-2013 in Figure 7 and Figure 8, the data shows that even as countries increase or decrease in their income inequality, their standard of living is still increasing. 
 
-
+![alt text](https://github.com/mfarmer11/cs-foundations-final-project/blob/456a56ae40a34024dd34d6b00460fc9485769fff/images/hdi_change.PNG)
  
 Figure 7
 
-
-
-
-
-
-
-
-
+![alt text](https://github.com/mfarmer11/cs-foundations-final-project/blob/456a56ae40a34024dd34d6b00460fc9485769fff/images/hdi_change.PNG)
 
 Figure 8
 
 Focusing specifically on the United States, Table 1 shows various socio-economic metrics.   Figure 9, shows how these indicators have change between 1991-2013. The results show that HDI has increased the most and employment in the industrial sector has decreased the most. Most of the economic indicators show that the wealth and income of the United States has increased. However, poverty and unemployment rate has also slightly increased. 
  
+
+![alt text](https://github.com/mfarmer11/cs-foundations-final-project/blob/456a56ae40a34024dd34d6b00460fc9485769fff/images/usa.PNG)
+
 Table 1
  
+![alt text](https://github.com/mfarmer11/cs-foundations-final-project/blob/456a56ae40a34024dd34d6b00460fc9485769fff/images/us%20metric%20change.PNG)
+
 Figure 9
 
 The results of these metrics correlated with Gini index or demonstrated in Figure 10. Most of the metrics used in this study were positively correlated with increasing Gini index, except for employment in the industrial sector, age dependency ratio. A negative association with unemployment rate is a positive relationship as that means more people are employed. 
 
- 
+
 Figure 10
 
 ### RESEARCH LIMITATIONS
