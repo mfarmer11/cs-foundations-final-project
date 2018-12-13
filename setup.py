@@ -12,5 +12,6 @@ setup(name='Final-Group-Project',
       author_email=['chicheung@gwmail.gwu.edu', 'fzambrano25@gwu.edu', 'ghancock@gwmail.gwu.edu', 'manaohf@gwu.edu']
       license='MIT'
       url='https://github.com/mfarmer11/cs-foundations-final-project.git',
-      packages= find_packages(), install_required = required,
+      packages= find_packages(), 
+      install_requires = required,
      )
