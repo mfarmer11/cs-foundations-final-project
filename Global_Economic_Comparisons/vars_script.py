@@ -8,6 +8,9 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import os
+fileDir = os.path.dirname(os.path.realpath('__file__'))
+
 
 
 # In[ ]:
@@ -20,14 +23,14 @@ import matplotlib.pyplot as plt
 
 
 #Import Gini Index data from the World Bank
-gini = pd.read_csv('gini.csv', sep=',', header=4)
+gini = pd.read_csv(os.path.join(fileDir, '../data/gini.csv'), header=4)
 
 
 # In[ ]:
 
 
 #Read in world bank data for all the selected states
-states = pd.read_csv('journal_wb.csv', header=4)
+states = pd.read_csv(os.path.join(fileDir,'../data/journal_wb.csv'), header=4)
 
 
 # In[ ]:
@@ -42,7 +45,7 @@ usa1 = states
 
 #unfortunatley there was no individual health or educational data for years with GINI Index data
 #Hence, will use the Human Development Index in their place from the United Nations Development Program
-hdi = pd.read_csv('h_d_i.csv', encoding='ISO-8859-1', header=1)
+hdi = pd.read_csv(os.path.join(fileDir,'../data/h_d_i.csv'), encoding='ISO-8859-1', header=1)
 
 
 # In[ ]:
@@ -132,7 +135,7 @@ hdi_us = hdi[["Country", '1991','1994','1997','2000','2004','2007','2010','2013'
 
 
 # Only select the United States
-us = usa.loc[usa["Country Name"] == "United States"]
+us = states.loc[states["Country Name"] == "United States"]
 
 
 # In[ ]:
